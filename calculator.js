@@ -1,8 +1,5 @@
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
-
-
-	// return the square root of the value
 	return value ** 0.5;
 }
 
@@ -26,7 +23,7 @@ function naturalLog(value) {
 
 // DONE: Implement sine function
 function sine(value) {
-
+    return Math.sin(value);
 }
 
 // TODO: Implement cosine function
