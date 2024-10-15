@@ -28,6 +28,18 @@ describe("Cosine Function", function () {
   it("should return 0.5", function () {
     assert.strictEqual(res, 0.5);
   });
+  const res2 = calculator.cosine(Math.PI/4)
+  it("should return 0", function() {
+    assert.strictEqual(res2, 0)
+  });
+  const res3 = calculator.cosine(Math.PI/2)
+  it("should return -1", function() {
+    assert.strictEqual(res3, -1);
+  });
+  const res4 = calculator.cosine(Math.PI)
+  it("should return 1", function(){
+    assert.strictEqual(res4, 1);
+  });
 });
 
 
