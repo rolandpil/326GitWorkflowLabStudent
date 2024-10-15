@@ -16,15 +16,12 @@ describe("Calculator Calculation Functions", function () {
   it("should return 2", function () {
     assert.strictEqual(res, 2);
   });
-<<<<<<< HEAD
 });
 describe("Calculator Calculation Functions", function () {
   const res = calculator.calculateSquareRoot(4);
   it("should return 2", function () {
     assert.strictEqual(res, 2);
   });
-=======
->>>>>>> b8734ab (added cosine function and tests)
 });
 
 describe("Cosine Function", function () {
