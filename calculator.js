@@ -3,6 +3,7 @@ function calculateSquareRoot(value) {
 
 
 	// return the square root of the value
+	return value ** 0.5;
 }
 
 // TODO: Implement square function
