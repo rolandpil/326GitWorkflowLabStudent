@@ -47,3 +47,28 @@ function runSine() {
   const v = sine(display.value);
   display.value = v;
 }
+
+// Keyboard functionality
+document.addEventListener("keydown", function (event) {
+  const k = event.key;
+  // if key is a number or function
+  if (!isNaN(k) || k == "+" || k == "-" || k == "/" || k == "*") {
+    // append k to display
+    appendToDisplay(k);
+  }
+
+  // if key is enter calculate result
+  if (k == "Enter" || k == "=") {
+    calculateResult();
+  }
+
+  // if key is backspace, delete a char
+  if (k == "Backspace") {
+    deleteLast();
+  }
+
+  // if key is esc clear screen
+  if (k == "Escape") {
+    clearDisplay();
+  }
+});
