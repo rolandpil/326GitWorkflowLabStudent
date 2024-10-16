@@ -13,6 +13,7 @@ describe("Calculator Calculation Functions", function () {
   it("should return 2", function () {
     assert.strictEqual(res, 2);
   });
+});
 describe("Calculator Calculation Functions", function () {
   const res = calculator.calculateSquareRoot(4);
   it("should return 2", function () {
