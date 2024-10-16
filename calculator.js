@@ -1,22 +1,16 @@
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
   // return the square root of the value
-  // return the square root of the value
 }
 
 // TODO: Implement square function
 function calculateSquare(value) {
   // Hint: Use exponentiation
   // return the square root of the value
-  // Hint: Use exponentiation
-  // return the square root of the value
 }
 
 // TODO: FIX reciprocal function
 function calculateReciprocal(value) {
-  // Hint: Reciprocal is 1/x
-  // return the square root of the value
-  return 1 / value;
   // Hint: Reciprocal is 1/x
   // return the square root of the value
   return 1 / value;
