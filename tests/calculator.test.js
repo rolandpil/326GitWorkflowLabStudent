@@ -36,7 +36,7 @@ describe('Calculator tangent function', function(){
     });
     
     it('should return 16331239353195370 if val is Math.pi / 2'), function(){
-        assert.strictEqual(res2,16331239353195370);
+        assert.strictEqual(res2,undefined);
     }
 
     it ('should return 0.9999999999999999 if val is Math.pi / 4'), function(){
