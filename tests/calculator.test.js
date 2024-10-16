@@ -24,7 +24,22 @@ describe('Calculate reciprocal tests', function(){
     it('should return an error', function() {})
         assert.throws(res2,expected);
 
-})
+});
 
+describe('Calculator tangent function', function(){
+    const res1 = calculator.tangent(0);
+    const res2 = calculator.tangent(Math.PI / 2);
+    const res3 = calculator.tangent(Math.PI / 4);
+    it('should return 0 if val is 0', function() {
+        assert.strictEqual(res1, 0);
+    });
+    
+    it('should return 16331239353195370 if val is Math.pi / 2', function(){
+        assert.strictEqual(res2,16331239353195370);
+    })
 
-// Add your tests here
+    it ('should return 0.9999999999999999 if val is Math.pi / 4', function(){
+        assert.strictEqual(res3,0.9999999999999999);
+    })
+});
+
