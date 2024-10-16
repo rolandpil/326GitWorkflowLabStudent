@@ -15,7 +15,6 @@ describe('Calculator Calculation Functions', function() {
     });
 });
 
-
 describe('Calculate reciprocal tests', function(){
     const res1 = calculator.calculateReciprocal(2);
     const res2 = () => calculator.calculateReciprocal(0);
@@ -43,3 +42,4 @@ describe('Calculator tangent function', function(){
         assert.strictEqual(res3,0.9999999999999999);
     })
 });
+
