@@ -1,52 +1,74 @@
-
-let display = document.getElementById('display');
+let display = document.getElementById("display");
 
 // Append number or operator to the display
 function appendToDisplay(value) {
-
-    display.value += value;
+  display.value += value;
 }
 
 // Clear the entire display
 function clearDisplay() {
-
-    display.value = '';
+  display.value = "";
 }
 
 // Delete the last character from the display
 function deleteLast() {
-
-    display.value = display.value.slice(0, -1);
+  display.value = display.value.slice(0, -1);
 }
 
 // Calculate and show the result
 function calculateResult() {
-
-    try {
-        display.value = eval(display.value);
-    } catch (error) {
-        display.value = 'Error';
-    }
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
+  }
 }
 
 function runSquareRoot() {
-    const v = calculateSquareRoot(display.value);
-    display.value = v;
-    
+  const v = calculateSquareRoot(display.value);
+  display.value = v;
 }
 
 function runSquare() {
-    // Hint: Use exponentiation
-    const v = calculateSquare(display.value);
-    display.value = v;
+  // Hint: Use exponentiation
+  const v = calculateSquare(display.value);
+  display.value = v;
 }
 
 function runReciprocal() {
-    // Hint: Reciprocal is 1/x
-    const v = calculateReciprocal(display.value);
-    display.value = v;
+  // Hint: Reciprocal is 1/x
+  const v = calculateReciprocal(display.value);
+  display.value = v;
 }
 
 // TODO: Implement run your functions here
 
+function runSine() {
+  const v = sine(display.value);
+  display.value = v;
+}
 
+// Keyboard functionality
+document.addEventListener("keydown", function (event) {
+  const k = event.key;
+  // if key is a number or function
+  if (!isNaN(k) || k == "+" || k == "-" || k == "/" || k == "*") {
+    // append k to display
+    appendToDisplay(k);
+  }
+
+  // if key is enter calculate result
+  if (k == "Enter" || k == "=") {
+    calculateResult();
+  }
+
+  // if key is backspace, delete a char
+  if (k == "Backspace") {
+    deleteLast();
+  }
+
+  // if key is esc clear screen
+  if (k == "Escape") {
+    clearDisplay();
+  }
+});
